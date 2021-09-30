@@ -87,7 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-header {
+/* header {
   background-color: red;
   height: 30vh;
   display: flex;
@@ -128,7 +128,7 @@ img {
 
 .searchBar {
   background-color: chartreuse;
-  /* align-items: center; */
+  /* align-items: center; 
 }
 
 nav {
@@ -138,7 +138,7 @@ nav {
 nav ul li a{
   
   justify-content: space-around;
-}
+} */
 
 
 
