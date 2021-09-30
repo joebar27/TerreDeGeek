@@ -87,7 +87,106 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ########################## HEADER ############################# */
 
+header {
+  background-color: red;
+  display: flex;
+  height: 33vh;
+  width: 100vh;
+  margin: auto;
+}
+
+header>section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header>section>div {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-around;
+  height: 11vh;
+}
+
+.logoslogan h1 {
+  flex-direction: row;
+  font-size: medium;
+}
+
+.searchBar {
+  background-color: seagreen;
+  display: flex;
+  height: 11vh;
+}
+.searchBar input {
+  width: 70vh;
+}
+.searchBar button {
+  width: 30vh;
+}
+/* taille des image reconfiguré */
+header img {
+  background-color: paleturquoise;
+  height: 10vh;
+}
+nav {
+  display: flex; 
+  align-items: flex-end; 
+  background-color: orangered;
+  height: 11vh;
+}
+
+nav>ul {
+  background-color: palegreen;
+  justify-content: center;
+}
+
+nav>ul>li {
+  background-color: olive;
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+/* ########################## MAIN ############################# */
+main {
+    background-color: greenyellow;
+    width: 80vh;
+    
+    display: flex;
+}
+
+#item1 {
+    background-color: tomato;
+    width: 80vh;
+    margin: 15px auto;
+    justify-content: center;
+
+}
+#item2 {
+    background-color: teal;
+    width: 80vh;
+    justify-content: center;
+
+}
+#item3 {
+    background-color: yellow;
+    width: 80vh;
+    justify-content: center;
+}
+/* ########################## FOOTER ############################# */
+footer {
+    background-color: dodgerblue;
+    display: flex;
+}
+
+footer>section {
+    justify-content: center;
+    margin: auto;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
