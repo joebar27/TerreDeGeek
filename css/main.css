@@ -94,88 +94,104 @@ header {
   display: flex;
   height: 33vh;
   width: 100vh;
-  margin: auto;
 }
 
 header>section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 
 header>section>div {
   display: flex;
   flex-flow: nowrap;
+  align-items: center;
   justify-content: space-around;
   height: 11vh;
+  margin: 0;
+  
 }
 
-.logoslogan h1 {
+.logoSlogan h1 {
   flex-direction: row;
-  font-size: medium;
+  font-size: 1.5em;
+
 }
 
 .searchBar {
   background-color: seagreen;
-  display: flex;
-  height: 11vh;
+  /* display: flex; */
+  /* height: 7vh; */
+  width: 100vh;
 }
-.searchBar input {
+
+.searchBar>input {
   width: 70vh;
+  height: 5vh;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .searchBar button {
   width: 30vh;
+  height: 6vh;
 }
 /* taille des image reconfiguré */
-header img {
-  background-color: paleturquoise;
+.logoSlogan>a>img {
   height: 10vh;
+  transform: rotate(-45deg);
+}
+header>section>div>a>img {
+  height: 8vh;
+  margin: 0 15px;
+  justify-content: space-between;
 }
 nav {
   display: flex; 
-  align-items: flex-end; 
-  background-color: orangered;
+  align-items: center;
+  justify-content: space-around;
+  background-color:violet;
   height: 11vh;
+  width: 100vh;
 }
 
 nav>ul {
   background-color: palegreen;
-  justify-content: center;
+  display: flex;
+  width: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav>ul>li {
   background-color: olive;
   display: inline;
+  list-style-type: none;
+  font-size: 2em;
 }
 
-li {
-  list-style: none;
-}
 /* ########################## MAIN ############################# */
-main {
-    background-color: greenyellow;
-    width: 80vh;
-    
+.container {
+    background-color: black;
+    width: 100vh;
     display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
-#item1 {
+.card {
     background-color: tomato;
-    width: 80vh;
-    margin: 15px auto;
+    width: 75vh;
+    margin: auto;
+    flex-direction: column;
     justify-content: center;
-
 }
-#item2 {
-    background-color: teal;
-    width: 80vh;
-    justify-content: center;
 
-}
-#item3 {
-    background-color: yellow;
-    width: 80vh;
-    justify-content: center;
+.card>img {
+  width: 25vh;
 }
 /* ########################## FOOTER ############################# */
 footer {
