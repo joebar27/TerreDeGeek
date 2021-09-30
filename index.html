@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -21,66 +23,65 @@
   <!-- ########################## HEADER ############################# -->
   <header>
     <section>
-      <div>
-
+      <div class="logoSlogan">
         <div class="homeLogo">
           <img src="img/logo2.png" alt="logo TerreDeGeek">
           <h1>Terre<br>De<br>Geek</h1>
         </div>
 
-        <div class="logoheader">
+        <div class="logoRedirection">
           <img src="img/geoloc.png" alt="logo de localisation magasins">
           <img src="img/panier.png" alt="logo de votre panier">
           <img src="img/login.png" alt="logo de connection">
         </div>
-
       </div>
 
       <div class="searchBar">
         <input type="text" placeholder="Recherche de produit ...">
         <button>Recherche</button>
       </div>
-
-      <!-- ########################## NAV ############################# -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Nos produits</a>
-          </li>
-          <li>
-            <a href="#">Nos promotions</a>
-          </li>
-          <li>
-            <a href="#">Notre socièté</a>
-          </li>
-        </ul>
-      </nav>
     </section>
+
+    <!-- ########################## NAV ############################# -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Nos produits</a>
+        </li>
+        <li>
+          <a href="#">Nos promotions</a>
+        </li>
+        <li>
+          <a href="#">Notre socièté</a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
 
 
   <!-- ########################## MAIN ############################# -->
   <main>
-    <div>
+    <div class="container">
       <div class="card">
         <img src="img/raspberry-pi-4-8gb.jpg" alt="raspberry pi 4 de 8Go">
         <div>
-          <div>
+          <article>
             <h2>Raspberry Pi 4 B (8 Go de RAM)</h2>
             <p>La fondation Raspberry Pi a répondu aux desiderata de ses clients et livre avec le Raspberry Pi 4 B un
               nouveau modèle qui devrait satisfaire tous les développeurs et makers :<br>
               processeur quadricœur plus rapide, nouveau processeur graphique, prise en charge du format 4K, USB 3.0,
               USB-C, Bluetooth 5.0, Gigabit Ethernet, et jusqu’à 8 Go de RAM.
             </p>
-          </div>
-          <span>prix</span>
+          </article>
+          <span>prix : 79.95 €</span>
         </div>
       </div>
 
       <div class="card">
         <img src="img/arduino-uno-rev3.jpg" alt="arduino uno">
         <div>
-          <div>
+          <article>
             <h2>Arduino UNO rev3</h2>
             <p>Ce nouveau modèle Arduino UNO (rev3) est quasiment comme son prédécesseur Duemilanove et 100% compatible
               mais il intègre à la fois une tension d'auto-alimentation (DC/USB) via une plaque incluse dans la puce
@@ -90,15 +91,15 @@
               n'occupe que 512 octets, nous aurons donc encore plus d'espace pour la programmation. Vous pouvez voir
               les spécifications sur son <a href="#">site officiel</a>
             </p>
-          </div>
-          <span>prix</span>
+          </article>
+          <span>prix : 13.50 €</span>
         </div>
       </div>
 
-      <div>
+      <div class="card">
         <img src="img/pc-gamer-1.png" alt="pc gamer haut de gamme">
         <div>
-          <div>
+          <article>
             <h2>PC GAMER XTREME DIABLO V27 (Design: JONSBO Mod3 gris RGB)</h2>
             <p>AMD Ryzen 9 5950X @ 4,9 GHz
               Water Cooling 360 RGB
@@ -109,14 +110,24 @@
               Windows 10 Pro inclus
               Garantie 24 mois
               déballer - brancher - démarrer</p>
-          </div>
-          <span>prix</span>
+          </article>
+          <span>prix : 5799 €</span>
         </div>
       </div>
     </div>
   </main>
   <!-- ########################## FOOTER ############################# -->
-
+  <footer>
+    <section>
+      <h4>Une réalisation de la classe de DWWM de l'AFPA Saint Etienne du Rouveray</h4>
+      <div>
+        <a href="https://fr-fr.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/?hl=fr">Instagram</a>
+        <a href="https://twitter.com/home">Twitter</a>
+        <a href="https://www.linkedin.com/">Linkedin</a>
+      </div>
+    </section>
+  </footer>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

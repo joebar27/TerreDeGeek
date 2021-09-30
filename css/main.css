@@ -87,63 +87,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* header {
-  background-color: red;
-  height: 30vh;
-  display: flex;
-  justify-content: space-around;
-  
-}
-header section {
-  justify-content: space-around;
-  align-items: center;
-}
-
-header section h1 {
-  font-size: 1em;
-  text-align: center;
-}
-section {
-  background-color: darkkhaki;
-   
-}
-
-img {
-  height: 40px;
-} 
-
-.homeLogo {
-  background-color: darkgreen;
-  width: 50%;
-  
-}
-.logoheader{
-  width: 50%;
-  justify-content: space-around;
-}
-.logoheader img {
-  background-color: darkcyan;
-  
-}
-
-.searchBar {
-  background-color: chartreuse;
-  /* align-items: center; 
-}
-
-nav {
-  display: flex;
-  background-color: blue;
-}
-nav ul li a{
-  
-  justify-content: space-around;
-} */
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
