@@ -87,6 +87,169 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ########################## HEADER ############################# */
+
+header {
+  background-color: red;
+  display: flex;
+  height: 33vh;
+  width: 100vh;
+}
+
+header>section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+header>section>div {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 11vh;
+  margin: 0;
+  
+}
+
+.titre {
+  flex-direction: row;
+  font-size: 1.5em;
+  color: rgb(255, 255, 0);
+}
+
+.searchBar {
+  background-color: rgb(0, 0, 0);
+  width: 100vh;
+}
+
+.searchBar>input {
+  width: 70vh;
+  height: 5vh;
+}
+.searchBar button {
+  width: 30vh;
+  height: 6vh;
+}
+/* taille des image reconfiguré */
+.logoSlogan>a>img {
+  height: 10vh;
+  transform: rotate(-45deg);
+}
+
+header>section>div>a>img {
+  height: 8vh;
+  margin: 0 15px;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  background-color:rgb(255, 0, 0);
+  height: 11vh;
+  width: 100vh;
+}
+
+nav>ul {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  width: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav>ul>li {
+  /* background-color: olive; */
+  display: inline;
+  list-style-type: none;
+  font-size: 2em;
+}
+
+nav>ul>li>a {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* ########################## MAIN ############################# */
+.container {
+    background-color: black;
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+    background-color: rgba(255, 255, 0, 0.850);
+    width: 80vh;
+    margin: 1vh auto;
+    border: solid 3px red;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.card>div>img {
+  height: 30vh;
+  float: left;
+}
+
+.card>div {
+  text-align: justify;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.card>span {
+  color: rgb(255, 0, 0);
+  font-size: 2em;
+  padding: 10px;
+  margin: 0 auto 2vh;
+  border-radius: 8px;
+  animation: clignote alternate 0.5s infinite;
+}
+
+@keyframes clignote {
+  from { background-color: black;
+        color: red;}
+  to { background-color: red;
+  color: yellow;}
+}
+
+/* ########################## FOOTER ############################# */
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+}
+footer>section{
+  display: flex;
+}
+footer>section>div {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  width: 80vh;
+  justify-content: space-around;
+}
+
+footer>section>div>a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.copyRight {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+  width: 100vh;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +343,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +356,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -209,11 +373,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -260,4 +424,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
