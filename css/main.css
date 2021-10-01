@@ -114,24 +114,20 @@ header>section>div {
   
 }
 
-.logoSlogan h1 {
+.titre {
   flex-direction: row;
   font-size: 1.5em;
-
+  color: rgb(255, 255, 0);
 }
 
 .searchBar {
-  background-color: seagreen;
-  /* display: flex; */
-  /* height: 7vh; */
+  background-color: rgb(0, 0, 0);
   width: 100vh;
 }
 
 .searchBar>input {
   width: 70vh;
   height: 5vh;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .searchBar button {
   width: 30vh;
@@ -142,22 +138,24 @@ header>section>div {
   height: 10vh;
   transform: rotate(-45deg);
 }
+
 header>section>div>a>img {
   height: 8vh;
   margin: 0 15px;
   justify-content: space-between;
 }
+
 nav {
   display: flex; 
   align-items: center;
   justify-content: space-around;
-  background-color:violet;
+  background-color:rgb(255, 0, 0);
   height: 11vh;
   width: 100vh;
 }
 
 nav>ul {
-  background-color: palegreen;
+  background-color: rgb(255, 0, 0);
   display: flex;
   width: 100vh;
   justify-content: space-around;
@@ -167,10 +165,15 @@ nav>ul {
 }
 
 nav>ul>li {
-  background-color: olive;
+  /* background-color: olive; */
   display: inline;
   list-style-type: none;
   font-size: 2em;
+}
+
+nav>ul>li>a {
+  color: yellow;
+  text-decoration: none;
 }
 
 /* ########################## MAIN ############################# */
@@ -178,30 +181,74 @@ nav>ul>li {
     background-color: black;
     width: 100vh;
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
 }
 
 .card {
-    background-color: tomato;
-    width: 75vh;
-    margin: auto;
+  display: flex;
+    background-color: rgba(255, 255, 0, 0.850);
+    width: 80vh;
+    margin: 1vh auto;
+    border: solid 3px red;
+    border-radius: 5px;
     flex-direction: column;
-    justify-content: center;
 }
 
-.card>img {
-  width: 25vh;
+.card>div>img {
+  height: 30vh;
+  float: left;
 }
+
+.card>div {
+  text-align: justify;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.card>span {
+  color: rgb(255, 0, 0);
+  font-size: 2em;
+  padding: 10px;
+  margin: 0 auto 2vh;
+  border-radius: 8px;
+  animation: clignote alternate 0.5s infinite;
+}
+
+@keyframes clignote {
+  from { background-color: black;
+        color: red;}
+  to { background-color: red;
+  color: yellow;}
+}
+
 /* ########################## FOOTER ############################# */
 footer {
-    background-color: dodgerblue;
+    background-color: rgb(0, 0, 0);
     display: flex;
+    width: 100vh;
+    justify-content: center;
+}
+footer>section{
+  display: flex;
+}
+footer>section>div {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  width: 80vh;
+  justify-content: space-around;
 }
 
-footer>section {
-    justify-content: center;
-    margin: auto;
+footer>section>div>a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.copyRight {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 0, 0);
+  width: 100vh;
+  margin: 0 auto;
+  font-size: 0.8em;
 }
 /* ==========================================================================
    Helper classes
