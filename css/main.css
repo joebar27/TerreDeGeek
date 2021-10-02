@@ -297,13 +297,30 @@ main>div>img {
   letter-spacing: 0.4em;
 }
 /*parametrage de la page produit.html*/
-.container>div>h1 {
+.container.Produit>div>h1 {
   background-color: red;
   color: yellow;
   font-size: 3em;
   border: solid 5px yellow;
   border-radius: 15px;
   padding: 5vh;
+}
+/*Parametrage de la page qui_sommes_nous.html*/
+.container.sarl>div {
+  background-color: yellow;
+  border: solid 5px red;
+  color: red;
+  width: 80vh;
+  margin: 5vh 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/*parametrage de la page panier_client.html*/
+.container
+.tableauPanier, td {
+  background-color: yellow;
+  color: red;
 }
 /* ########################## FOOTER ############################# */
 footer {
