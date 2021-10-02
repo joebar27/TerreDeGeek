@@ -317,10 +317,55 @@ main>div>img {
 }
 
 /*parametrage de la page panier_client.html*/
-.container
-.tableauPanier, td {
+.container.panier>div {
+  background-color: red;
+  border-radius: 10px;
+  border: solid yellow 4px;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 75vh;
+}
+
+.tableauPanier {
   background-color: yellow;
-  color: red;
+  padding: 2vh;
+  border-radius: 10px;  
+}
+
+.tableauPanier td {
+  background-color: red;
+  border: solid yellow 4px;
+  color: yellow;
+  font-size: 1.5em;
+  text-align: center;
+  height: 5vh;
+  width: 20vh;
+  margin: 1vh;
+}
+
+.tableauPanier th {
+  background-color: red;
+  border: solid yellow 4px;
+  color: yellow;
+  font-size: 1.5em;
+  text-align: center;
+  height: 5vh;
+  width: 20vh;
+  margin: 1vh;
+}
+.head {
+  font-size: 2em;
+}
+.container.panier>div>button {
+  background-color: red;
+  border: solid 4px yellow;
+  border-radius: 10px;
+  color: yellow;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 2vh;
 }
 /* ########################## FOOTER ############################# */
 footer {
