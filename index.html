@@ -17,65 +17,77 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main1.css">
   <link rel="shortcut icon" href="img/terre.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <!-- ########################## HEADER ############################# -->
-  <header>
-    <section>
-      <aside class="logoSlogan">
-        <a href="index.html">
-          <img src="img/logo2.png" alt="logo TerreDeGeek">
-        </a>
-      </aside>
-      <div class="titre">
+  <header class="flex fullCenter firstBg">
+    <section class="tCenter">
+      <a href="index.html">
         <h1>Terre<em>De</em>Geek</h1>
-      </div>
-      <div>
-        <a href="nos_societes.html">
-          <img src="img/geoloc-jaune-noire.png" alt="logo de localisation magasins">
-        </a>
-      </div>
-      <div>
-        <a href="panier_client.html">
-          <img src="img/panier-noire-jaune.png" alt="logo de votre panier">
-        </a>
-      </div>
-      <div>
-        <a href="connection.html">
-          <img src="img/login-jaune-noire.png" alt="logo de connection">
-        </a>
-      </div>
-
-      <div class="searchBar">
-        <input type="text" placeholder="Recherche de produit ...">
-        <button>Recherche</button>
-      </div>
-
-      <!-- ########################## NAV ############################# -->
-      <nav>
-        <ul>
-          <li>
-            <a href="produit.html">Nos produits</a>
-          </li>
-          <li>
-            <a href="index.html">Nos promotions</a>
-          </li>
-          <li>
-            <a href="qui_sommes_nous.html">Notre socièté</a>
-          </li>
-        </ul>
-      </nav>
+      </a>
+      <p>Tout l'univers des geeks est ici</p>
     </section>
   </header>
 
+  <!-- ########################## NAV ############################# -->
+  <section>
+    <nav class="flex between firstBg">
+      <div class="flex between" onclick="myFunction(this)">
+        <div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class=" burger itemsCenter">
+          <li>
+            <a href="index.html">Acceuil</a>
+          </li>
+          <li>
+            <a href="produit.html">Produits</a>
+          </li>
+          <li>
+            <a href="qui_sommes_nous.html">Socièté</a>
+          </li>
+        </ul>
+      </div>
+      <aside class="flex">
+        <button class="flex fullCenter btnLogo firstBg">
+          <a href="nos_societes.html">
+            <img src="img/geoloc-jaune-noire.png" alt="logo de localisation magasins">
+          </a>
+        </button>
+        <button class="flex fullCenter btnLogo firstBg">
+          <a href="panier_client.html">
+            <img src="img/panier-noire-jaune.png" alt="logo de votre panier">
+          </a>
+        </button>
+        <button class="flex fullCenter btnLogo firstBg">
+          <a href="connection.html">
+            <img src="img/login-jaune-noire.png" alt="logo de connection">
+          </a>
+        </button>
+      </aside>
+    </nav>
+  </section>
+  <div>
+    <input type="text" placeholder="Recherche de produit ...">
+    <button>Recherche</button>
+  </div>
 
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
   <!-- ########################## MAIN ############################# -->
 
   <main class="container">

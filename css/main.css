@@ -96,7 +96,7 @@ header {
   width: 100vh;
 }
 
-header>section {
+header > section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -104,7 +104,7 @@ header>section {
   
 }
 
-header>section>div {
+header > section > div {
   display: flex;
   flex-flow: nowrap;
   align-items: center;
@@ -126,7 +126,7 @@ header>section>div {
   width: 100vh;
 }
 
-.searchBar>input {
+.searchBar > input {
   width: 70vh;
   height: 5vh;
   border: solid 3px red;
@@ -142,12 +142,12 @@ header>section>div {
   font-weight: 700;
 }
 /* taille des image reconfiguré */
-.logoSlogan>a>img {
+.logoSlogan > a > img {
   height: 10vh;
   transform: rotate(-45deg);
 }
 
-header>section>div>a>img {
+header > section > div > a > img {
   height: 8vh;
   margin: 0 15px;
   justify-content: space-between;
@@ -162,7 +162,7 @@ nav {
   width: 100vh;
 }
 
-nav>ul {
+nav > ul {
   background-color: rgb(255, 0, 0);
   display: flex;
   width: 100vh;
@@ -172,14 +172,14 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li {
+nav > ul > li {
   /* background-color: olive; */
   display: inline;
   list-style-type: none;
   font-size: 2em;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   color: yellow;
   text-decoration: none;
 }
@@ -204,19 +204,19 @@ nav>ul>li>a {
     flex-direction: column;
 }
 
-.card>div>img {
+.card > div > img {
   height: 30vh;
   float: left;
 }
 
-.card>div {
+.card > div {
   text-align: justify;
   padding: 10px;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-.card>span {
+.card > span {
   color: rgb(255, 0, 0);
   font-size: 2em;
   padding: 10px;
@@ -241,12 +241,12 @@ nav>ul>li>a {
   min-height: 125vh;
 }
 
-.mentionLegal>h1 {
+.mentionLegal > h1 {
   color: yellow;
   font-weight: 700;
 }
 
-.mentionLegal>p {
+.mentionLegal > p {
   color: red;
   text-align: center;
   width: 80vh;
@@ -258,7 +258,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-main>div>img {
+main > div > img {
   background-color: yellow;
   width: 80vh;
 }
@@ -276,7 +276,7 @@ main>div>img {
   border-radius: 10px;
 }
 
-.connect>input {
+.connect > input {
   background-color: rgb(172, 172, 172);
   color: red;
   border: solid 3px red;
@@ -287,7 +287,7 @@ main>div>img {
   font-size: 1.5em;
 }
 
-.connect>button {
+.connect > button {
   background-color: red;
   width: 30vh;
   height: 5vh;
@@ -297,7 +297,7 @@ main>div>img {
   letter-spacing: 0.4em;
 }
 /*parametrage de la page produit.html*/
-.container.Produit>div>h1 {
+.container .Produit > div > h1 {
   background-color: red;
   color: yellow;
   font-size: 3em;
@@ -306,7 +306,7 @@ main>div>img {
   padding: 5vh;
 }
 /*Parametrage de la page qui_sommes_nous.html*/
-.container.sarl>div {
+.container .sarl > div {
   background-color: yellow;
   border: solid 5px red;
   color: red;
@@ -317,7 +317,7 @@ main>div>img {
 }
 
 /*parametrage de la page panier_client.html*/
-.container.panier>div {
+.container .panier > div {
   background-color: red;
   border-radius: 10px;
   border: solid yellow 4px;
@@ -358,7 +358,7 @@ main>div>img {
 .head {
   font-size: 2em;
 }
-.container.panier>div>button {
+.container .panier > div > button {
   background-color: red;
   border: solid 4px yellow;
   border-radius: 10px;
@@ -375,13 +375,13 @@ footer {
     width: 100vh;
 }
 
-footer>section{
+footer > section{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-footer>section>div {
+footer > section > div {
   background-color: rgb(255, 0, 0);
   display: flex;
   height: 20vh;
@@ -396,7 +396,7 @@ footer>section>div {
   text-align: center;
 }
 
-.legacymention>a {
+.legacymention > a {
   color: yellow;
   font-size: 1.5em;
 }
@@ -407,7 +407,7 @@ footer>section>div {
   width: 30vh;
 }
 
-.paiement>div>img {
+.paiement > div > img {
   height: 8vh;
 }
 
@@ -425,7 +425,7 @@ footer>section>div {
   width: 30vh;
 }
 
-.reseauxSociaux>ul {
+.reseauxSociaux > ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -436,14 +436,14 @@ footer>section>div {
   padding-inline-start: 0;
 }
 
-.reseauxSociaux>ul>li>a {
+.reseauxSociaux > ul > li > a {
   text-decoration: none;
   font-size: 1.4em;
   
 }
 
 /*parametrage de la carte des magasins*/
-.carteNormandie>a>img {
+.carteNormandie > a > img {
   width: 25vh;
 }
 
