@@ -108,7 +108,8 @@ a {
   color: inherit;
 }
 
-img {
+img { 
+  /* height: 100%;  */
   width: 100%;
 }
 
@@ -175,22 +176,25 @@ header section {
 
 /* ################################ NAV ##################################### */
 
-.btnLogo {
-  border: none;
+aside div {
+  width: 15%;
 }
 
 nav {
-  border: solid 2px #DBBA00;
-  margin: 1vh 0;
+  border-bottom: solid 2px #DBBA00;
+  height: 5vh;
+  margin-bottom: 1vh;
+  
 }
 
 nav a {
   margin: 0 0.5rem;
 }
 
-nav aside {
-  width: 33%;
-}
+/* .icon {
+  width: 70%;
+} */
+
 .bar1,
 .bar2,
 .bar3 {
@@ -220,6 +224,10 @@ nav aside {
 .change .burger {
   display: flex;
   font-weight: bolder;
+}
+
+.change .icon {
+  display: none;
 }
 
 /* ############################### MAIN ##################################### */
