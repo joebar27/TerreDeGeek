@@ -173,7 +173,7 @@ p {
 
 .secondBg {
   background-color: #A80B00;
-  color: #DBBA00;
+  color: #daa520;
 }
 
 .threeBg {
@@ -198,6 +198,21 @@ header section a h1 {
   font-size: 1.6em;
 }
 
+header section p {
+  color: #daa520;
+
+}
+
+header section p em {
+  color: #daa520;
+  font-size: 1em;
+}
+
+.slogan {
+  color: #A80B00;
+  font-size: 1.3em;
+}
+
 /* ################################ NAV ##################################### */
 /* logo bar nav hidden */
 /* aside div {
@@ -206,7 +221,7 @@ header section a h1 {
 
 /* border under nav  */
 nav {
-  border-bottom: solid 2px #DBBA00;
+  border-bottom: solid 2px #daa520;
   height: 5vh;
   margin-bottom: 3vh;
   padding-bottom: 1vh;
@@ -217,7 +232,7 @@ nav a {
   margin: 0 0.5rem;
   padding: 0.3rem;
   color: #A80B00;
-  border: solid 1px #DBBA00;
+  border: solid 1px #daa520;
   border-radius: 5px;
 }
 
@@ -227,13 +242,15 @@ nav a {
 .bar3 {
   width: 30px;
   height: 5px;
-  background-color: #DBBA00;
+  background-color: #daa520;
   margin: 6px 0.5rem;
-  transition: 0.4s;
+
 }
 
 .change .bar1 {
   transform: rotate(45deg) translate(9px, 6px);
+  color: #A80B00;
+  transition: 0.4s;
 }
 
 .change .bar2 {
@@ -242,6 +259,8 @@ nav a {
 
 .change .bar3 {
   transform: rotate(-45deg) translate(9px, -6px);
+  color: #A80B00;
+  transition: 0.4s;
 }
 
 .burger {
@@ -256,18 +275,22 @@ nav a {
 .change .icon {
   display: none;
 }
+
 /* mise en forme barre de recherche */
 .research {
   height: 5vh;
   display: flex;
   align-items: center;
 }
-.change .research  {
+
+.change .research {
   display: none;
 }
-.research input, .research button {
+
+.research input,
+.research button {
   background-color: #222;
-  color: #DBBA00;
+  color: #daa520;
   font-weight: bolder;
   font-size: 0.9rem;
   border: solid 3px #A80B00;
@@ -284,26 +307,103 @@ nav a {
   justify-content: center;
   width: 100vw;
 }
+
 .card {
-  width: 80%;
-  border: solid 1px #A80B00;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 80vh;
+  margin: 1vh auto;
+  border: solid 3px red;
+  border-radius: 5px;
+  flex-direction: column;
 }
-.card div {
-  width: 100%;
-  
+
+.card>div {
+  text-align: justify;
+  padding: 5%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
-.card div img {
-  display: flex;
-  width: 60%;
+
+.card>div>img {
+  width: 50%;
+  float: left;
 }
-.card div aside {
-  text-align: center;
+
+.card>div>aside>h2,
+p {
+  font-size: 0.8em;
+}
+
+.card>span {
+  color: #daa520;
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding: 10px;
+  margin: 0 auto 2vh;
+  border-radius: 8px;
+}
+
+.prix {
+  color: #A80B00;
+  font-size: 1.5rem;
 }
 
 /* ############################### FOOTER ################################### */
+footer {}
+
+footer section {
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legacymention {
+  width: 15%;
+  text-align: center;
+}
+
+.legacymention>a>p {
+  color: #daa520;
+}
+
+.paiement {
+  width: 30%;
+  text-align: center;
+}
+
+.paiement>div>p {
+  color: goldenrod;
+}
+
+.reseauxSociaux {
+  width: 30%;
+}
+
+.reseauxSociaux>ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .reseauxSociaux > ul > li{
+  flex-wrap: wrap;
+} */
+.reseauxSociaux>ul>li>a>i {
+  margin: 2px 5px;
+  color: #A80B00;
+}
+
+.carteNormandie {
+  width: 25%;
+}
+
+.copyright {
+  width: 100%;
+  font-size: 0.6rem;
+  color: #A80B00;
+  font-weight: bolder;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION TABLETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 426px) {
