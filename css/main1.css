@@ -96,7 +96,7 @@ textarea {
 }
 
 body {
-  background-color: #000;
+  background-color: #222;
 }
 
 ul {
@@ -108,7 +108,7 @@ a {
   color: inherit;
 }
 
-img { 
+img {
   /* height: 100%;  */
   width: 100%;
 }
@@ -120,9 +120,18 @@ h4,
 h5,
 h6 {
   font-family: 'Press Start 2P', cursive;
+  color: #A80B00;
+}
+
+p {
+  color: #979797;
 }
 
 /* ########################## UTILITY CLASSES ############################### */
+
+.container {
+  width: 100%;
+}
 
 .flex {
   display: flex;
@@ -158,43 +167,61 @@ h6 {
 }
 
 .firstBg {
+  background-color: #222;
+  color: #A80B00;
+}
+
+.secondBg {
   background-color: #A80B00;
   color: #DBBA00;
 }
 
-.secondBg {
-  background-color: #000000;
-  color: #A80B00;
+.threeBg {
+  background-color: #222;
+  color: #979797;
 }
+
+.hidden {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ############################### HEADER ################################### */
 
 header section {
-  height: 15vh;
+  height: 20vh;
   font-weight: bolder;
 }
 
-/* ################################ NAV ##################################### */
-
-aside div {
-  width: 15%;
+header section a h1 {
+  font-size: 1.6em;
 }
 
+/* ################################ NAV ##################################### */
+/* logo bar nav hidden */
+/* aside div {
+  display: none;
+} */
+
+/* border under nav  */
 nav {
   border-bottom: solid 2px #DBBA00;
   height: 5vh;
-  margin-bottom: 1vh;
-  
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
 }
 
+/* mise en form nav */
 nav a {
   margin: 0 0.5rem;
+  padding: 0.3rem;
+  color: #A80B00;
+  border: solid 1px #DBBA00;
+  border-radius: 5px;
 }
 
-/* .icon {
-  width: 70%;
-} */
-
+/* mise en forme burger */
 .bar1,
 .bar2,
 .bar3 {
@@ -229,14 +256,72 @@ nav a {
 .change .icon {
   display: none;
 }
+/* mise en forme barre de recherche */
+.research {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+.change .research  {
+  display: none;
+}
+.research input, .research button {
+  background-color: #222;
+  color: #DBBA00;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  border: solid 3px #A80B00;
+  border-radius: 2px;
+  padding: 2px 5px;
+  margin-left: 4px;
+}
+
 
 /* ############################### MAIN ##################################### */
-
-
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+}
+.card {
+  width: 80%;
+  border: solid 1px #A80B00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card div {
+  width: 100%;
+  
+}
+.card div img {
+  display: flex;
+  width: 60%;
+}
+.card div aside {
+  text-align: center;
+}
 
 /* ############################### FOOTER ################################### */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION TABLETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 426px) {
+  /* ############################### HEADER ################################### */
 
+  /* ################################ MAIN ################################### */
+
+  /* ############################### FOOTER ################################### */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION DESKTOP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 769px) {
+  /* ############################### HEADER ################################### */
+
+  /* ################################ MAIN ################################### */
+
+  /* ############################### FOOTER ################################### */
+}
 
 /* ==========================================================================
      Helper classes
