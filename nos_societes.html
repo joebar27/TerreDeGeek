@@ -15,132 +15,147 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <script src="https://kit.fontawesome.com/f31a7f958c.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
     <link rel="shortcut icon" href="img/terre.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
     <!-- ########################## HEADER ############################# -->
-    <header>
-        <section>
-            <aside class="logoSlogan">
-                <a href="index.html">
-                    <img src="img/logo2.png" alt="logo TerreDeGeek">
-                </a>
-            </aside>
-            <div class="titre">
+    <header class="flex fullCenter secondeBg">
+        <section class="tCenter">
+            <a href="index.html">
                 <h1>Terre<em>De</em>Geek</h1>
-            </div>
-            <div>
-                <a href="#">
-                    <img src="img/geoloc-jaune-noire.png" alt="logo de localisation magasins">
-                </a>
-            </div>
-            <div>
-                <a href="panier_client.html">
-                    <img src="img/panier-noire-jaune.png" alt="logo de votre panier">
-                </a>
-            </div>
-            <div>
-                <a href="connection.html">
-                    <img src="img/login-jaune-noire.png" alt="logo de connection">
-                </a>
-            </div>
-
-            <div class="searchBar">
-                <input type="text" placeholder="Recherche de produit ...">
-                <button>Recherche</button>
-            </div>
-
-            <!-- ########################## NAV ############################# -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="produit.html">Nos produits</a>
-                    </li>
-                    <li>
-                        <a href="index.html">Nos promotions</a>
-                    </li>
-                    <li>
-                        <a href="qui_sommes_nous.html">Notre socièté</a>
-                    </li>
-                </ul>
-            </nav>
+            </a>
+            <p>Tout le materiel des geeks <em class="slogan">no</em><em>r</em><em class="slogan">ma</em><em>n</em><em
+                    class="slogan">d</em></p>
         </section>
     </header>
 
-    <!-- ############################# MAIN ############################### -->
+    <!-- ########################## NAV ############################# -->
+    <section>
+        <nav class="flex between firstBg">
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~construction du menu burger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div id="menu" class="flex between itemsCenter">
+                <div onclick="myFunction()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <ul class=" burger itemsCenter">
+                    <li>
+                        <a href="index.html">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="produit.html">Produits</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~ barre de recherche produit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <form class="research">
+                    <input type="text" placeholder="Recherche de produits ...">
+                    <button>Recherche</button>
+                </form>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~logo de la barre de navigation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- <aside class="flex flexEnd">
+        <div class="firstBg">
+          <a href="nos_societes.html">
+            <img src="img/geoloc-jaune-noire.png" alt="logo de localisation magasins">
+          </a>
+        </div>
+        <div class="firstBg">
+          <a href="panier_client.html">
+            <img src="img/panier-noire-jaune.png" alt="logo de votre panier">
+          </a>
+        </div>
+        <div class="firstBg">
+          <a href="connection.html">
+            <img src="img/login-jaune-noire.png" alt="logo de connection">
+          </a>
+        </div>
+      </aside> -->
+        </nav>
+    </section>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("menu");
+            x.classList.toggle("change");
+        }
+    </script>
+
+    <!-- ########################### MAIN ############################# -->
+
     <main class="container">
-        <div>
+        <div class="carte">
             <img src="img/region-normandie-cible.png" alt="carte de placement de nos sociètés">
         </div>
     </main>
 
-    <!-- ############################ FOOTER #############################  -->
-    <footer>
+    <!-- ########################## FOOTER #############################  -->
+    <footer class=" flex container">
         <section>
-            <!-- <div class="logoFooter">
-                <a href=""><img src="img/logo2.png" alt="logo de la socièté"></a>
-            </div> -->
+
             <div class="legacymention">
                 <a href="mention_legal.html">
-                    <p>Mention<br>Légal</p>
+                    <p>Mention Légal</p>
                 </a>
             </div>
+
             <div class="paiement">
                 <div>
+                    <p>Paiements accepté :</p>
                     <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
                 </div>
-                <div>
-                    <img src="img/bitcoin.png" alt="logo paiement bitcoin">
-                </div>
-
             </div>
+
             <div class="reseauxSociaux">
                 <ul>
                     <li>
                         <a href="https://fr-fr.facebook.com/">
-                            <img class="logoSocial" src="img/facebook.png" alt="logo facebook">
-
+                            <i class="fab fa-facebook-square fa-2x"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/?hl=fr">
-                            <img class="logoSocial" src="img/instagram.png" alt="logo instagram">
-
+                            <i class="fab fa-instagram-square fa-2x"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/home">
-                            <img class="logoSocial" src="img/twitter.png" alt="logo twitter">
-
+                            <i class="fab fa-twitter-square fa-2x"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/">
-                            <img class="logoSocial" src="img/linkedin.png" alt="logo linkedin">
-
+                            <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </li>
                 </ul>
-
             </div>
+
             <div class="carteNormandie">
                 <a href="nos_societes.html">
                     <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
                 </a>
             </div>
         </section>
-
     </footer>
 
-    <p class="copyRight">Ce site est une réalisation de Romain Anger dans le cadre de
+    <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
         la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray</p>
 
 

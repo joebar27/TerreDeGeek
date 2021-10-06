@@ -223,7 +223,7 @@ header section p em {
 nav {
   border-bottom: solid 2px #daa520;
   height: 5vh;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
   padding-bottom: 1vh;
 }
 
@@ -293,7 +293,7 @@ nav a {
   color: #daa520;
   font-weight: bolder;
   font-size: 0.9rem;
-  border: solid 3px #A80B00;
+  border: solid 2px #A80B00;
   border-radius: 2px;
   padding: 2px 5px;
   margin-left: 4px;
@@ -308,11 +308,13 @@ nav a {
   width: 100vw;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .card {
   display: flex;
   width: 80vh;
   margin: 1vh 5%;
-  border: solid 3px red;
+  border: solid 2px #A80B00;
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
@@ -349,8 +351,120 @@ p {
   font-size: 1.5rem;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mentionLegal {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mentionLegal >h1 {
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+.mentionLegal >p {
+  padding: 1.5em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.produit {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.produit >h1 {
+  font-size: 1rem;
+  margin: 20vh 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.carte {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : qui_sommes_nous.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sarl {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : panier_client.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.panier {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-wrap: wrap;
+  /* flex-direction: column;
+  text-align: center; */
+}
+
+.tableauPanier {
+  background-color: transparent;
+  color: #A80B00;
+  /* border: #daa520 solid 2px; */
+  width: 100%;
+}
+
+.tableauPanier th {
+  border: #979797 solid 1px;
+}
+
+.tableauPanier td {
+  border: #979797 solid 1px;
+  font-weight: bolder;
+  width: 30%;
+}
+
+.validPanier {
+  background-color: transparent;
+  color: #daa520;
+  font-weight: bolder;
+  border: 3px solid #A80B00;
+  width: 40%;
+  margin-top: 1vh;
+}
+
+td>input {
+  width: 96%;
+}
+
 /* ############################### FOOTER ################################### */
-footer {}
+footer {
+  border-top: #daa520 solid 2px;
+  margin-top: 1vh;
+  padding-top: 1vh;
+}
 
 footer section {
   height: 12vh;
