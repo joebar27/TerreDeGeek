@@ -419,6 +419,22 @@ p {
   font-size: 0.8rem;
   color: #979797;
 }
+
+.ficheproduit>div>h6 {
+  margin-bottom: 2vh;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.ficheproduit>div>p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.imgPc {
+  width: 50%;
+  margin: auto;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .carte {
