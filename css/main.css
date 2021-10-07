@@ -18,14 +18,14 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+   * A better looking default horizontal rule
+   */
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+   * Remove default fieldset styles.
+   */
 
 fieldset {
   border: 0;
@@ -76,392 +76,475 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+   * Allow only vertical resizing of textareas.
+   */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+     Author's custom styles
+     ========================================================================== */
 
-/* ########################## HEADER ############################# */
-
-header {
-  background-color: red;
-  display: flex;
-  height: 33vh;
-  width: 100vh;
-}
-
-header>section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  
-}
-
-header>section>div {
-  display: flex;
-  flex-flow: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  height: 11vh;
+/* ########################## GENERAL RULES ################################# */
+* {
   margin: 0;
-  
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-.titre {
-  flex-direction: row;
+body {
+  background-color: #222;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  /* height: 100%;  */
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.9em;
-  color: rgb(255, 255, 0);
+  color: #A80B00;
 }
 
-.searchBar {
-  background-color: rgb(0, 0, 0);
-  width: 100vh;
+p {
+  color: #979797;
 }
 
-.searchBar>input {
-  width: 70vh;
-  height: 5vh;
-  border: solid 3px red;
-  background-color: rgb(255, 255, 0);
-  color: red;
-}
-.searchBar button {
-  width: 30vh;
-  height: 6vh;
-  border: solid 3px yellow;
-  background-color: red;
-  color: yellow;
-  font-weight: 700;
-}
-/* taille des image reconfiguré */
-.logoSlogan>a>img {
-  height: 10vh;
-  transform: rotate(-45deg);
+/* ########################## UTILITY CLASSES ############################### */
+
+.container {
+  width: 100%;
 }
 
-header>section>div>a>img {
-  height: 8vh;
-  margin: 0 15px;
+.flex {
+  display: flex;
+}
+
+.fullCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.between {
   justify-content: space-between;
 }
 
+.around {
+  justify-content: space-around;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.firstBg {
+  background-color: #222;
+  color: #A80B00;
+}
+
+.secondBg {
+  background-color: #A80B00;
+  color: #daa520;
+}
+
+.threeBg {
+  background-color: #222;
+  color: #979797;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ############################### HEADER ################################### */
+
+header section {
+  height: 20vh;
+  font-weight: bolder;
+}
+
+header section a h1 {
+  font-size: 1.6em;
+}
+
+header section p {
+  color: #daa520;
+
+}
+
+header section p em {
+  color: #daa520;
+  font-size: 1em;
+}
+
+.slogan {
+  color: #A80B00;
+  font-size: 1.3em;
+}
+
+/* ################################ NAV ##################################### */
+/* logo bar nav hidden */
+/* aside div {
+  display: none;
+} */
+
+/* border under nav  */
 nav {
-  display: flex; 
-  align-items: center;
-  justify-content: space-around;
-  background-color:rgb(255, 0, 0);
-  height: 11vh;
-  width: 100vh;
+  border-bottom: solid 2px #daa520;
+  height: 5vh;
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
 }
 
-nav>ul {
-  background-color: rgb(255, 0, 0);
+/* mise en form nav */
+nav a {
+  margin: 0 0.5rem;
+  padding: 0.3rem;
+  color: #A80B00;
+  border: solid 1px #daa520;
+  border-radius: 5px;
+}
+
+/* mise en forme burger */
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #daa520;
+  margin: 6px 0.5rem;
+
+}
+
+.change .bar1 {
+  transform: rotate(45deg) translate(9px, 6px);
+  color: #A80B00;
+  transition: 0.4s;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(-45deg) translate(9px, -6px);
+  color: #A80B00;
+  transition: 0.4s;
+}
+
+.burger {
+  display: none;
+}
+
+.change .burger {
   display: flex;
-  width: 100vh;
-  justify-content: space-around;
+  font-weight: bolder;
+}
+
+.change .icon {
+  display: none;
+}
+
+/* mise en forme barre de recherche */
+.research {
+  height: 5vh;
+  display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
-nav>ul>li {
-  /* background-color: olive; */
-  display: inline;
-  list-style-type: none;
-  font-size: 2em;
+.change .research {
+  display: none;
 }
 
-nav>ul>li>a {
-  color: yellow;
-  text-decoration: none;
+.research input,
+.research button {
+  background-color: #222;
+  color: #daa520;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  border: solid 2px #A80B00;
+  border-radius: 2px;
+  padding: 2px 5px;
+  margin-left: 4px;
 }
 
-/* ########################## MAIN ############################# */
+
+/* ############################### MAIN ##################################### */
 .container {
-    background-color: black;
-    width: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 125vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
 }
 
-/*parametrage de la page index.html*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .card {
   display: flex;
-    background-color: rgba(255, 255, 0, 0.850);
-    width: 80vh;
-    margin: 1vh auto;
-    border: solid 3px red;
-    border-radius: 5px;
-    flex-direction: column;
-}
-
-.card>div>img {
-  height: 30vh;
-  float: left;
+  width: 80vh;
+  margin: 1vh 5%;
+  border: solid 2px #A80B00;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card>div {
   text-align: justify;
-  padding: 10px;
+  padding: 5%;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
+.card>div>img {
+  width: 50%;
+  float: left;
+}
+
+.card>div>aside>h2,
+p {
+  font-size: 0.8em;
+}
+
 .card>span {
-  color: rgb(255, 0, 0);
-  font-size: 2em;
+  color: #daa520;
+  font-weight: bolder;
+  font-size: 1.4em;
   padding: 10px;
   margin: 0 auto 2vh;
   border-radius: 8px;
-  animation: clignote alternate 0.5s infinite;
 }
 
-@keyframes clignote {
-  from { background-color: black;
-        color: red;}
-  to { background-color: red;
-  color: yellow;}
+.prix {
+  color: #A80B00;
+  font-size: 1.5rem;
 }
 
-/*parametrage de la page mention_legal.html*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .mentionLegal {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vh;
-  min-height: 125vh;
-}
-
-.mentionLegal>h1 {
-  color: yellow;
-  font-weight: 700;
-}
-
-.mentionLegal>p {
-  color: red;
-  text-align: center;
   width: 80vh;
-  line-height: 2em;
-}
-
-/*parametrage de la page nos_societes.html*/
-main {
-  justify-content: center;
-  align-items: center;
-}
-main>div>img {
-  background-color: yellow;
-  width: 80vh;
-}
-
-/*parametrage page connection*/
-.connect {
-  background-color: yellow;
-  display: flex;
+  margin: 1vh 5%;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 80vh;
-  border: solid 4px red;
-  border-radius: 10px;
-}
-
-.connect>input {
-  background-color: rgb(172, 172, 172);
-  color: red;
-  border: solid 3px red;
-  width: 50vh;
-  height: 5vh;
-  border-radius: 10px;
-  margin-bottom: 5vh;
-  font-size: 1.5em;
-}
-
-.connect>button {
-  background-color: red;
-  width: 30vh;
-  height: 5vh;
-  color: yellow;
-  font-weight: 800;
-  font-size: 1.5em;
-  letter-spacing: 0.4em;
-}
-/*parametrage de la page produit.html*/
-.container.Produit>div>h1 {
-  background-color: red;
-  color: yellow;
-  font-size: 3em;
-  border: solid 5px yellow;
-  border-radius: 15px;
-  padding: 5vh;
-}
-/*Parametrage de la page qui_sommes_nous.html*/
-.container.sarl>div {
-  background-color: yellow;
-  border: solid 5px red;
-  color: red;
-  width: 80vh;
-  margin: 5vh 0;
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
 }
 
-/*parametrage de la page panier_client.html*/
-.container.panier>div {
-  background-color: red;
-  border-radius: 10px;
-  border: solid yellow 4px;
-  padding: 2vh;
+.mentionLegal >h1 {
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+.mentionLegal >p {
+  padding: 1.5em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.produit {
   display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.produit >h1 {
+  font-size: 1rem;
+  margin: 20vh 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.carte {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
   flex-direction: column;
-  /* align-items: center; */
-  width: 75vh;
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : qui_sommes_nous.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sarl {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : panier_client.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.panier {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+  flex-wrap: wrap;
+  /* flex-direction: column;
+  text-align: center; */
 }
 
 .tableauPanier {
-  background-color: yellow;
-  padding: 2vh;
-  border-radius: 10px;  
-}
-
-.tableauPanier td {
-  background-color: red;
-  border: solid yellow 4px;
-  color: yellow;
-  font-size: 1.5em;
-  text-align: center;
-  height: 5vh;
-  width: 20vh;
-  margin: 1vh;
+  background-color: transparent;
+  color: #A80B00;
+  /* border: #daa520 solid 2px; */
+  width: 100%;
 }
 
 .tableauPanier th {
-  background-color: red;
-  border: solid yellow 4px;
-  color: yellow;
-  font-size: 1.5em;
-  text-align: center;
-  height: 5vh;
-  width: 20vh;
-  margin: 1vh;
+  border: #979797 solid 1px;
 }
-.head {
-  font-size: 2em;
+
+.tableauPanier td {
+  border: #979797 solid 1px;
+  font-weight: bolder;
+  width: 30%;
 }
-.container.panier>div>button {
-  background-color: red;
-  border: solid 4px yellow;
-  border-radius: 10px;
-  color: yellow;
-  font-size: 2em;
-  font-weight: 900;
-  margin-top: 2vh;
+
+.validPanier {
+  background-color: transparent;
+  color: #daa520;
+  font-weight: bolder;
+  border: 3px solid #A80B00;
+  width: 40%;
+  margin-top: 1vh;
 }
-/* ########################## FOOTER ############################# */
+
+td>input {
+  width: 96%;
+}
+
+/* ############################### FOOTER ################################### */
 footer {
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    height: 20vh;
-    width: 100vh;
+  border-top: #daa520 solid 2px;
+  margin-top: 1vh;
+  padding-top: 1vh;
 }
 
-footer>section{
+footer section {
+  height: 12vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-footer>section>div {
-  background-color: rgb(255, 0, 0);
-  display: flex;
-  height: 20vh;
   align-items: center;
-  justify-content: center;
 }
 
-/*parametrage mention légal*/
 .legacymention {
-  width: 15vh;
-  justify-content: center;
+  width: 15%;
   text-align: center;
 }
 
-.legacymention>a {
-  color: yellow;
-  font-size: 1.5em;
+.legacymention>a>p {
+  color: #daa520;
 }
-/*parametrage logo de paiement*/
+
 .paiement {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30vh;
+  width: 30%;
+  text-align: center;
 }
 
-.paiement>div>img {
-  height: 8vh;
+.paiement>div>p {
+  color: goldenrod;
 }
 
-/*parametrage reseaux sociaux*/
-.logoSocial {
-  height: 6vh;
-  margin-right: 1vh;
-}
-.lastLogoSocial {
-  height: 6vh;
-}
 .reseauxSociaux {
-  display: flex;
-  flex-flow: wrap;
-  width: 30vh;
+  width: 30%;
 }
 
 .reseauxSociaux>ul {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   justify-content: center;
-  align-items: center;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }
 
-.reseauxSociaux>ul>li>a {
-  text-decoration: none;
-  font-size: 1.4em;
-  
+/* .reseauxSociaux > ul > li{
+  flex-wrap: wrap;
+} */
+.reseauxSociaux>ul>li>a>i {
+  margin: 2px 5px;
+  color: #A80B00;
 }
 
-/*parametrage de la carte des magasins*/
-.carteNormandie>a>img {
-  width: 25vh;
+.carteNormandie {
+  width: 25%;
 }
 
-/*copyright en bas de page*/
-.copyRight {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 0, 0);
-  width: 100vh;
-  margin: 0 auto;
-  font-size: 0.8em;
+.copyright {
+  width: 100%;
+  font-size: 0.6rem;
+  color: #A80B00;
+  font-weight: bolder;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION TABLETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 426px) {
+  /* ############################### HEADER ################################### */
+
+  /* ################################ MAIN ################################### */
+
+  /* ############################### FOOTER ################################### */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION DESKTOP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 769px) {
+  /* ############################### HEADER ################################### */
+
+  /* ################################ MAIN ################################### */
+
+  /* ############################### FOOTER ################################### */
+}
+
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+     Helper classes
+     ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+   * Hide visually and from screen readers
+   */
 
 .hidden,
 [hidden] {
@@ -469,13 +552,13 @@ footer>section>div {
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
 
 .sr-only {
   border: 0;
@@ -491,10 +574,10 @@ footer>section>div {
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -508,24 +591,24 @@ footer>section>div {
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+   * Hide visually and from screen readers, but maintain layout
+   */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
 
 .clearfix::before,
 .clearfix::after {
@@ -538,10 +621,10 @@ footer>section>div {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
@@ -555,10 +638,10 @@ footer>section>div {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
 
 @media print {
 
@@ -586,9 +669,9 @@ footer>section>div {
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -605,9 +688,9 @@ footer>section>div {
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
   thead {
     display: table-header-group;
   }
