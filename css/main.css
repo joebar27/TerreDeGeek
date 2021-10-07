@@ -320,24 +320,24 @@ nav a {
   justify-content: center;
 }
 
-.card>div {
+.card>a>div {
   text-align: justify;
   padding: 5%;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-.card>div>img {
+.card>a>div>img {
   width: 50%;
   float: left;
 }
 
-.card>div>aside>h2,
+.card>a>div>aside>h2,
 p {
   font-size: 0.8em;
 }
 
-.card>span {
+.card>a>span {
   color: #daa520;
   font-weight: bolder;
   font-size: 1.4em;
@@ -415,9 +415,9 @@ p {
   text-align: center;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : panier_client.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : prestations.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.panier {
+.prestation {
   display: flex;
   width: 80vh;
   margin: 1vh 5%;
@@ -429,35 +429,34 @@ p {
   text-align: center; */
 }
 
-.tableauPanier {
+.tableauPrestation {
   background-color: transparent;
   color: #A80B00;
   /* border: #daa520 solid 2px; */
   width: 100%;
 }
 
-.tableauPanier th {
+.tableauPrestation th {
   border: #979797 solid 1px;
+  text-align: center;
 }
 
-.tableauPanier td {
+.tableauPrestation td {
   border: #979797 solid 1px;
   font-weight: bolder;
-  width: 30%;
+  text-align: center;
+  width: 33%;
 }
 
-.validPanier {
+/* .validPrestation {
   background-color: transparent;
   color: #daa520;
   font-weight: bolder;
   border: 3px solid #A80B00;
   width: 40%;
   margin-top: 1vh;
-}
+} */
 
-td>input {
-  width: 96%;
-}
 
 /* ############################### FOOTER ################################### */
 footer {
