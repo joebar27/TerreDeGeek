@@ -362,12 +362,12 @@ p {
   text-align: center;
 }
 
-.mentionLegal >h1 {
+.mentionLegal>h1 {
   font-size: 1.5rem;
   padding: 1em;
 }
 
-.mentionLegal >p {
+.mentionLegal>p {
   padding: 1.5em;
 }
 
@@ -394,17 +394,31 @@ p {
   font-size: 0.8rem;
   margin: 1vh;
   text-align: center;
-  
+
 }
+
 .ficheproduit>h6 {
+  margin-bottom: 2vh;
   font-size: 0.7rem;
   text-align: center;
 }
+
 .ficheproduit>p {
   text-align: center;
+  font-weight: 600;
 }
-
-
+.produitlist {
+  width: 80%;
+  padding-left: 10%;
+}
+.produitlist>ul {
+  text-align: center;
+}
+.produitlist>ul>li {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #979797;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .carte {
