@@ -229,11 +229,12 @@ nav {
 
 /* mise en form nav */
 nav a {
-  margin: 0 0.5rem;
-  padding: 0.3rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
   color: #A80B00;
   border: solid 1px #daa520;
   border-radius: 5px;
+  font-size: 0.9rem;
 }
 
 /* mise en forme burger */
@@ -407,6 +408,8 @@ p {
   text-align: center;
   font-weight: 600;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ css produit 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .produitlist {
   width: 80%;
   padding-left: 10%;
@@ -430,11 +433,14 @@ p {
   text-align: center;
   font-weight: 600;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ css produit 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .imgPc {
   width: 50%;
   margin: auto;
 }
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .carte {
@@ -471,8 +477,6 @@ p {
   border: solid 2px #A80B00;
   border-radius: 3px;
   flex-wrap: wrap;
-  /* flex-direction: column;
-  text-align: center; */
 }
 
 .tableauPrestation {
@@ -494,16 +498,53 @@ p {
   width: 33%;
 }
 
-/* .validPrestation {
-  background-color: transparent;
-  color: #daa520;
-  font-weight: bolder;
-  border: 3px solid #A80B00;
-  width: 40%;
-  margin-top: 1vh;
-} */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : contact.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+.contact {
+  display: flex;
+  width: 80vh;
+  margin: 1vh 5%;
+  padding: 0.8em;
+  border: solid 2px #A80B00;
+  border-radius: 3px;
+}
 
+.contact>form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact>form>fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.form-group {
+  display: flex;
+  width: 80%;
+  color: #979797;
+  font-weight: 600;
+  margin-bottom: 2vh;
+  justify-content: space-between;
+}
+
+.form-group>input {
+  width: 60%;
+}
+
+.submit-group {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  color: #979797;
+}
+
+.submit-group>input {
+  margin: 0 5%;
+}
 /* ############################### FOOTER ################################### */
 footer {
   border-top: #daa520 solid 2px;
