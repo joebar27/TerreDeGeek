@@ -311,7 +311,6 @@ nav a {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .card {
-  display: flex;
   width: 80vh;
   margin: 1vh 5%;
   border: solid 2px #A80B00;
@@ -376,18 +375,35 @@ p {
 
 .produit {
   display: flex;
+  flex-wrap: wrap;
   width: 80vh;
   margin: 1vh 5%;
   padding: 0.8em;
   border: solid 2px #A80B00;
   border-radius: 3px;
+}
+
+.split {
+  width: 100%;
+  height: 2px;
+  background-color: #daa520;
+  margin: 2vh 0;
+}
+
+.produitTitle {
+  font-size: 0.8rem;
+  margin: 1vh;
+  text-align: center;
+  
+}
+.ficheproduit>h6 {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.ficheproduit>p {
   text-align: center;
 }
 
-.produit >h1 {
-  font-size: 1rem;
-  margin: 20vh 0;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
