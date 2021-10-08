@@ -204,13 +204,13 @@ header section p {
 }
 
 header section p em {
-  color: #daa520;
+  color: #A80B00;
   font-size: 1em;
 }
 
 .slogan {
-  color: #A80B00;
-  font-size: 1.3em;
+  color: #daa520;
+  font-size: 1.2em;
 }
 
 /* ################################ NAV ##################################### */
@@ -408,15 +408,18 @@ p {
   text-align: center;
   font-weight: 600;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ css produit 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .produitlist {
   width: 80%;
   padding-left: 10%;
 }
+
 .produitlist>ul {
   text-align: center;
 }
+
 .produitlist>ul>li {
   font-weight: 600;
   font-size: 0.8rem;
@@ -433,6 +436,7 @@ p {
   text-align: center;
   font-weight: 600;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ css produit 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .imgPc {
@@ -515,13 +519,15 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+
 .contact>form>fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 }
+
 .form-group {
   display: flex;
   width: 80%;
@@ -533,19 +539,47 @@ p {
 
 .form-group>input {
   width: 60%;
+  color: #222;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+.form-group>textarea {
+  color: #222;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+
+.form-group>select {
+  width: 60%;
+  color: #222;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  box-sizing: content-box;
+}
+
+.form-group>select>option {
+  color: #222;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  box-sizing: content-box;
 }
 
 .submit-group {
   display: flex;
   width: 90%;
   justify-content: flex-end;
-  color: #979797;
 }
 
 .submit-group>input {
-  margin: 0 5%;
+  color: #222;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin: 0 0.7rem;
 }
+
 /* ############################### FOOTER ################################### */
+
 footer {
   border-top: #daa520 solid 2px;
   margin-top: 1vh;
