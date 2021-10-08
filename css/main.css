@@ -109,7 +109,6 @@ a {
 }
 
 img {
-  /* height: 100%;  */
   width: 100%;
 }
 
@@ -130,7 +129,10 @@ p {
 /* ########################## UTILITY CLASSES ############################### */
 
 .container {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
 }
 
 .flex {
@@ -185,7 +187,11 @@ p {
   display: none;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~                                                                                       ~~ */
+/* ~~                                    VERSION MOBILE                                     ~~ */
+/* ~~                                                                                       ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ############################### HEADER ################################### */
 
@@ -213,7 +219,7 @@ header section p em {
   font-size: 1.2em;
 }
 
-/* ################################ NAV ##################################### */
+/* ################################ NAVBAR ##################################### */
 
 /* border under nav  */
 nav {
@@ -230,7 +236,7 @@ nav a {
   padding: 0.2rem;
   color: #A80B00;
   border: solid 1px #daa520;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 0.9rem;
 }
 
@@ -299,12 +305,6 @@ nav a {
 
 
 /* ############################### MAIN ##################################### */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -344,9 +344,13 @@ p {
   border-radius: 8px;
 }
 
-.prix {
+.card>a>div>p {
   color: #A80B00;
-  font-size: 1.5rem;
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -424,9 +428,9 @@ p {
   color: #979797;
 }
 
-.ficheproduit>div>h6 {
+.ficheproduit>h6 {
   margin-bottom: 2vh;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -442,6 +446,13 @@ p {
   margin: auto;
 }
 
+.ficheproduit>div {
+  text-align: center;
+}
+
+.ficheproduit>div>h6 {
+  font-size: 0.8rem;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -522,13 +533,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
 }
 
 .form-group {
   display: flex;
-  width: 80%;
+  width: 80vw;
   color: #979797;
   font-weight: 600;
   margin-bottom: 2vh;
@@ -546,10 +555,12 @@ p {
   color: #222;
   font-weight: bolder;
   font-size: 0.8rem;
+  box-sizing: border-box;
+  max-width: 61%;
 }
 
 .form-group>select {
-  width: 60%;
+  width: 61%;
   color: #222;
   font-weight: bolder;
   font-size: 0.8rem;
@@ -582,6 +593,7 @@ footer {
   border-top: #daa520 solid 2px;
   margin-top: 1vh;
   padding-top: 1vh;
+
 }
 
 footer section {
@@ -610,7 +622,7 @@ footer section {
 }
 
 .reseauxSociaux {
-  width: 30%;
+  width: 25vw;
 }
 
 .reseauxSociaux>ul {
@@ -619,16 +631,13 @@ footer section {
   justify-content: center;
 }
 
-/* .reseauxSociaux > ul > li{
-  flex-wrap: wrap;
-} */
 .reseauxSociaux>ul>li>a>i {
   margin: 2px 5px;
   color: #A80B00;
 }
 
 .carteNormandie {
-  width: 25vw;
+  width: 20vw;
 }
 
 .copyright {
@@ -636,15 +645,20 @@ footer section {
   font-size: 0.6rem;
   color: #A80B00;
   font-weight: bolder;
+  margin: 1vh 0;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION TABLETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~                                                                                       ~~ */
+/* ~~                                    VERSION TABLETTE                                   ~~ */
+/* ~~                                                                                       ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 @media screen and (min-width: 426px) {
 
   /* ############################### HEADER ################################### */
   header section {
     height: 15vh;
-    font-weight: bolder;
   }
 
   header section a h1 {
@@ -654,7 +668,6 @@ footer section {
   }
 
   header section p {
-    color: #daa520;
     font-size: 1.2rem;
   }
 
@@ -669,9 +682,6 @@ footer section {
   nav a {
     margin: 0 0.5rem;
     padding: 0.2rem 0.5rem;
-    color: #A80B00;
-    border: solid 1px #daa520;
-    border-radius: 3px;
     font-size: 1rem;
     font-weight: bolder;
   }
@@ -697,57 +707,208 @@ footer section {
   /* ###################################### MAIN ############################# */
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  
-  .container {}
+
   .card {
-    width: 80vh;
-    margin: 1vh 5%;
-    border: solid 2px #A80B00;
-    border-radius: 5px;
-    flex-direction: column;
+    width: 50vh;
+    margin: 1vh 1vw;
+  }
+
+  .card>a>div>aside>h2 {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .card>a>div>aside>p {
+    min-height: 170px;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .mentionLegal {
+    height: 55vh;
+  }
+
+  .mentionLegal>h1 {
+    font-size: 1.5rem;
+    padding: 1em;
+  }
+
+  .mentionLegal>p {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit1.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .produitTitle {
+    font-size: 1.2rem;
+  }
+
+  .ficheproduit>h6 {
+    font-size: 0.9rem;
+  }
+
+  .ficheproduit>p {
+    font-size: 0.8rem;
+  }
+
+  .imgproduit {
+    display: flex;
+    width: 50%;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit2.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .produitlist>ul {
+    text-align: center;
+  }
+
+  .produitlist>ul>li {
+    font-size: 0.9rem;
+  }
+
+  .ficheproduit>h6 {
+    font-size: 1rem;
+  }
+
+  .ficheproduit>p {
+    font-size: 0.9rem;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit3.html ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .ficheproduit>div>h6 {
+    font-size: 1rem;
+  }
+
+  .ficheproduit>div>p {
+    font-size: 0.9rem;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .carte {
+    height: 50vh;
+    align-items: center;
+    
+  }
+  .carte>img {
+    width: 80%;
+  }
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : qui_sommes_nous.html ~~~~~~~~~~~~~~~~~~~~~~~*/
+.sarl {
+  display: flex;
+  align-items: center;
+}
+.sarl>div {
+  height: 30vh;
+  width: 60vw;
+}
+.sarl>div>iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.sarl>h1 {
+  font-size: 1.6rem;
+}
+
+.sarl>p {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : prestations.html ~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .prestation {
+    display: flex;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableauPrestation {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : contact.html  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .contact {
+    height: 55vh;
+  }
+
+  .form-group {
+    width: 70vw;
+  }
+
+
+
+  /* ############################### FOOTER ################################### */
+
+  footer section {
+    width: 100vw;
+  }
+
+  .legacymention>a>p {
+    font-size: 1.4rem;
+  }
+
+  .paiement {
+    width: 25%;
+  }
+
+  .paiement>div>p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-top: 1vh;
+  }
+
+  .reseauxSociaux>ul {
     justify-content: space-around;
   }
 
-  .card>a>div {
-    text-align: justify;
-    padding: 5%;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+  .reseauxSociaux>ul>li>a>i {
+    margin: 2vh;
   }
 
-  .card>a>div>img {
-    width: 50%;
-    float: left;
+  .carteNormandie {
+    max-height: 15vh;
+    width: 24vw;
+    padding: 1vh;
   }
 
-  .card>a>div>aside>h2,
-  p {
-    font-size: 0.8em;
-    margin: 0.5rem;
+  .copyright {
+    font-size: 0.9rem;
+    padding-top: 1vh;
   }
 
-  .card>a>span {
-    color: #daa520;
-    font-weight: bolder;
-    font-size: 1.4em;
-    padding: 10px;
-    margin: 0 auto 2vh;
-    border-radius: 8px;
-  }
-
-  .prix {
-    color: #A80B00;
-    font-size: 1.5rem;
-  }
-
-  /* ############################### FOOTER ################################### */
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION DESKTOP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~                                                                                       ~~ */
+/* ~~                                    VERSION DESKTOP                                    ~~ */
+/* ~~                                                                                       ~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 @media screen and (min-width: 769px) {
   /* ############################### HEADER ################################### */
 
   /* ################################ MAIN ################################### */
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit1.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit2.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit3.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : qui_sommes_nous.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : prestations.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : contact.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
   /* ############################### FOOTER ################################### */
 }
