@@ -214,15 +214,12 @@ header section p em {
 }
 
 /* ################################ NAV ##################################### */
-/* logo bar nav hidden */
-/* aside div {
-  display: none;
-} */
 
 /* border under nav  */
 nav {
   border-bottom: solid 2px #daa520;
   height: 5vh;
+  width: 100%;
   margin-bottom: 1vh;
   padding-bottom: 1vh;
 }
@@ -264,11 +261,11 @@ nav a {
   transition: 0.4s;
 }
 
-.burger {
+.burgerMenu {
   display: none;
 }
 
-.change .burger {
+.change .burgerMenu {
   display: flex;
   font-weight: bolder;
 }
@@ -335,6 +332,7 @@ nav a {
 .card>a>div>aside>h2,
 p {
   font-size: 0.8em;
+  margin: 0.5rem;
 }
 
 .card>a>span {
@@ -630,11 +628,11 @@ footer section {
 }
 
 .carteNormandie {
-  width: 25%;
+  width: 25vw;
 }
 
 .copyright {
-  width: 100%;
+  width: 100vw;
   font-size: 0.6rem;
   color: #A80B00;
   font-weight: bolder;
@@ -642,9 +640,105 @@ footer section {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VERSION TABLETTE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 426px) {
-  /* ############################### HEADER ################################### */
 
-  /* ################################ MAIN ################################### */
+  /* ############################### HEADER ################################### */
+  header section {
+    height: 15vh;
+    font-weight: bolder;
+  }
+
+  header section a h1 {
+    font-size: 2.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0;
+  }
+
+  header section p {
+    color: #daa520;
+    font-size: 1.2rem;
+  }
+
+  /* ################################ NAVBAR ################################### */
+
+  #menu {
+    width: 100%;
+    margin-top: 1vh;
+    justify-content: space-around;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    color: #A80B00;
+    border: solid 1px #daa520;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+
+  /* mise en forme barre de recherche */
+  .research input {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .research button {
+    font-size: 1rem;
+  }
+
+  /* ###################################### MAIN ############################# */
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : index.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  
+  .container {}
+  .card {
+    width: 80vh;
+    margin: 1vh 5%;
+    border: solid 2px #A80B00;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card>a>div {
+    text-align: justify;
+    padding: 5%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .card>a>div>img {
+    width: 50%;
+    float: left;
+  }
+
+  .card>a>div>aside>h2,
+  p {
+    font-size: 0.8em;
+    margin: 0.5rem;
+  }
+
+  .card>a>span {
+    color: #daa520;
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 0 auto 2vh;
+    border-radius: 8px;
+  }
+
+  .prix {
+    color: #A80B00;
+    font-size: 1.5rem;
+  }
 
   /* ############################### FOOTER ################################### */
 }
