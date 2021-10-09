@@ -41,7 +41,7 @@
   </header>
 
   <!-- ########################## NAV ############################# -->
-  <section>
+  
     <nav class="flex between firstBg">
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~construction du menu burger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="menu" class="flex between itemsCenter">
@@ -72,7 +72,7 @@
         </form>
       </div>
     </nav>
-  </section>
+  
 
   <script>
     function myFunction() {
@@ -86,8 +86,6 @@
   <main class="container">
     <div class="contact">
       <form action="contact.html">
-        <fieldset>
-          <legend>Nous contacter</legend>
           <div class="form-group">
             <label for="firstName">Nom :</label>
             <input type="text" id="firstName" name="firstName" minlength="2" maxlength="40" autofocus required>
@@ -121,7 +119,6 @@
             <label for="message">Message :</label>
             <textarea id="message" name="message" cols="100" rows="10" placeholder="Votre message" required></textarea>
           </div>
-        </fieldset>
         <div class="submit-group">
           <input type="submit" value="Envoyer">
           <button>Recherche</button>
@@ -132,20 +129,16 @@
 
   <!-- ########################## FOOTER #############################  -->
   <footer class="container">
-    <section class="flex between">
+    <section class="flex around">
       <div class="legacymention">
         <a href="mention_legal.html">
           <p>Mention Légal</p>
         </a>
       </div>
-
       <div class="paiement">
-        <div>
           <p>Paiements accepté :</p>
           <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
-        </div>
       </div>
-
       <div class="reseauxSociaux">
         <ul>
           <li>
@@ -174,11 +167,12 @@
           </li>
         </ul>
       </div>
-
       <div class="carteNormandie">
+        <div>
         <a href="nos_societes.html">
           <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
         </a>
+      </div>
       </div>
     </section>
     <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de

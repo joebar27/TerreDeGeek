@@ -531,7 +531,7 @@ nav a {
   justify-content: center;
 }
 
-.contact>form>fieldset {
+.contact>form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -595,7 +595,6 @@ footer {
   border-top: #daa520 solid 2px;
   margin-top: 1vh;
   padding-top: 1vh;
-
 }
 
 footer section {
@@ -862,6 +861,9 @@ footer section {
   }
 
   /* ############################### FOOTER ################################### */
+  footer {
+    padding-top: 3vh;
+  }
 
   footer section {
     width: 100vw;
@@ -931,42 +933,77 @@ footer section {
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : mention_legal.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit1.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit2.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : produit3.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : nos_societes.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : qui_sommes_nous.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : prestations.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .sarl {
+    width: 80%;
+  }
 
   /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ page : contact.html ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
+.contact {
+  width: 80%;
+  
+}
+.form-group {
+  width: 60%;
+}
+.submit-group {
+  width: 60%;
+}
   /* ############################### FOOTER ################################### */
-  
-  footer {
 
-  }
-  
-  footer>section {
-    height: 12vh;
+  footer {
+    padding-top: 3vh;
   }
 
   .copyright {
     height: 3vh;
   }
 
-  footer section div {
-    height: 15vh;
+  .carteNormandie img {
+    height: 30%;
   }
 
-  .carteNormandie {
-    height: fit-content;
+  .reseauxSociaux {
+    width: 15vw;
   }
 
+  .legacymention>a>p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+
+  .paiement>p {
+    font-weight: bolder;
+  }
+
+  .paiement>img {
+    width: 60%;
+  }
+
+  .reseauxSociaux>ul {
+    width: 15vw;
+    padding: 0 20px;
+  }
+
+  .reseauxSociaux>ul>li>a>p {
+    font-weight: bolder;
+  }
+
+  .carteNormandie>div>a>img {
+    width: 60%;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    padding-top: 1vh;
+  }
 }
 
 /* ==========================================================================
