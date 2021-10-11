@@ -41,17 +41,17 @@
     </header>
 
     <!-- ########################## NAV ############################# -->
-    <section>
+   
         <nav class="flex between firstBg">
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~construction du menu burger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="menu" class="flex between itemsCenter">
-                <div onclick="myFunction()">
+                <div class="burger" onclick="myFunction()">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
 
-                <ul class=" burger itemsCenter">
+                <ul class=" burgerMenu itemsCenter">
                     <li>
                         <a href="index.html">Acceuil</a>
                     </li>
@@ -62,7 +62,7 @@
                         <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="qui_sommes_nous.html">Présentation</a>
+                        <a href="qui_sommes_nous.html">Nous</a>
                     </li>
                 </ul>
                 <!-- ~~~~~~~~~~~~~~~~~~~~~~~ barre de recherche produit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -72,7 +72,7 @@
                 </form>
             </div>
         </nav>
-    </section>
+   
 
     <script>
         function myFunction() {
@@ -109,59 +109,60 @@
         </article>
     </main>
     <!-- ########################## FOOTER #############################  -->
-    <footer class=" flex container">
-        <section>
-
-            <div class="legacymention">
-                <a href="mention_legal.html">
-                    <p>Mention Légal</p>
+    <footer class="container">
+        <section class="flex around">
+          <div class="legacymention">
+            <a href="mention_legal.html">
+              <p>Mention Légal</p>
+            </a>
+          </div>
+          <div class="paiement">
+              <p>Paiements accepté :</p>
+              <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
+          </div>
+          <div class="reseauxSociaux">
+            <ul>
+              <li>
+                <a href="https://fr-fr.facebook.com/">
+                  <i class="fab fa-facebook-square fa-2x"></i>
+                  <p>Facebook</p>
                 </a>
-            </div>
-
-            <div class="paiement">
-                <div>
-                    <p>Paiements accepté :</p>
-                    <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
-                </div>
-            </div>
-
-            <div class="reseauxSociaux">
-                <ul>
-                    <li>
-                        <a href="https://fr-fr.facebook.com/">
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/?hl=fr">
-                            <i class="fab fa-instagram-square fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/home">
-                            <i class="fab fa-twitter-square fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="carteNormandie">
-                <a href="nos_societes.html">
-                    <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
+              </li>
+              <li>
+                <a href="https://www.instagram.com/?hl=fr">
+                  <i class="fab fa-instagram-square fa-2x"></i>
+                  <p>Instagram</p>
                 </a>
-            </div>
+              </li>
+              <li>
+                <a href="https://twitter.com/home">
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <p>Twitter</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                  <p>Linkedin</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="carteNormandie">
+            <div>
+            <a href="nos_societes.html">
+              <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
+            </a>
+          </div>
+          </div>
         </section>
-    </footer>
+        <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
+          la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray
+        </p>
+      </footer>
 
-    <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
-        la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray</p>
 
-
+      
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

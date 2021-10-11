@@ -41,17 +41,17 @@
   </header>
 
   <!-- ########################## NAV ############################# -->
-  <section>
+  
     <nav class="flex between firstBg">
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~construction du menu burger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="menu" class="flex between itemsCenter">
-        <div onclick="myFunction()">
+        <div class="burger" onclick="myFunction()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
 
-        <ul class=" burger itemsCenter">
+        <ul class=" burgerMenu itemsCenter">
           <li>
             <a href="index.html">Acceuil</a>
           </li>
@@ -62,7 +62,7 @@
             <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="qui_sommes_nous.html">Présentation</a>
+            <a href="qui_sommes_nous.html">Nous</a>
           </li>
         </ul>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~ barre de recherche produit ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -72,7 +72,7 @@
         </form>
       </div>
     </nav>
-  </section>
+  
 
   <script>
     function myFunction() {
@@ -86,19 +86,17 @@
   <main class="container">
     <div class="contact">
       <form action="contact.html">
-        <fieldset>
-          <legend>Nous contacter</legend>
           <div class="form-group">
             <label for="firstName">Nom :</label>
-            <input type="text" id="firstName" name="firstName" autofocus required>
+            <input type="text" id="firstName" name="firstName" minlength="2" maxlength="40" autofocus required>
           </div>
           <div class="form-group">
             <label for="lastName">Prénom :</label>
-            <input type="text" id="larstName" name="lastName" required>
+            <input type="text" id="larstName" name="lastName" minlength="2" maxlength="40" required>
           </div>
           <div class="form-group">
             <label for="phone">Téléphone :</label>
-            <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="0232445566" required>
+            <input type="tel" id="phone" name="phone" inputmode="tel" pattern="[0-9]{10}" placeholder="0232445566" required>
           </div>
           <div class="form-group">
             <label for="email">Email :</label>
@@ -106,78 +104,81 @@
           </div>
           <div class="form-group">
             <label for="age">Age :</label>
-            <input type="number" id="age" name="age" placeholder="18" required>
+            <input type="number" id="age" name="age">
           </div>
           <div class="form-group">
             <label for="objet">Objet :</label>
-            <input type="text" id="objet" name="objet" required>
+            <select name="objet" id="objet" required>              
+              <option value="information">information</option>
+              <option value="reclamation">reclamation</option>
+              <option value="partenariat">partenariat</option>
+              <option value="autre">autre</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="message">Message :</label>
-            <textarea id="message" name="message" cols="20" rows="10" required></textarea>
+            <textarea id="message" name="message" cols="100" rows="10" placeholder="Votre message" required></textarea>
           </div>
-        </fieldset>
         <div class="submit-group">
-          <input type="submit"value="Envoyer">
-          <input type="reset" value="Annuler">
+          <input type="submit" value="Envoyer">
+          <button>Recherche</button>
         </div>
       </form>
     </div>
   </main>
 
   <!-- ########################## FOOTER #############################  -->
-  <footer class=" flex container">
-    <section>
-
+  <footer class="container">
+    <section class="flex around">
       <div class="legacymention">
         <a href="mention_legal.html">
           <p>Mention Légal</p>
         </a>
       </div>
-
       <div class="paiement">
-        <div>
           <p>Paiements accepté :</p>
           <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
-        </div>
       </div>
-
       <div class="reseauxSociaux">
         <ul>
           <li>
             <a href="https://fr-fr.facebook.com/">
               <i class="fab fa-facebook-square fa-2x"></i>
+              <p>Facebook</p>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/?hl=fr">
               <i class="fab fa-instagram-square fa-2x"></i>
+              <p>Instagram</p>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/home">
               <i class="fab fa-twitter-square fa-2x"></i>
+              <p>Twitter</p>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/">
               <i class="fab fa-linkedin fa-2x"></i>
+              <p>Linkedin</p>
             </a>
           </li>
         </ul>
       </div>
-
       <div class="carteNormandie">
+        <div>
         <a href="nos_societes.html">
           <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
         </a>
       </div>
+      </div>
     </section>
+    <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
+      la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray
+    </p>
   </footer>
-
-  <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
-    la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray</p>
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

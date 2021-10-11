@@ -41,16 +41,16 @@
   </header>
 
   <!-- ########################## NAV ############################# -->
-  <section>
+  
     <nav class="flex between firstBg">
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~construction du menu burger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="menu" class="flex between itemsCenter">
-        <div onclick="myFunction()">
+        <div class="burger" onclick="myFunction()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <ul class=" burger itemsCenter">
+        <ul class=" burgerMenu itemsCenter">
           <li>
             <a href="index.html">Acceuil</a>
           </li>
@@ -61,7 +61,7 @@
             <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="qui_sommes_nous.html">Présentation</a>
+            <a href="qui_sommes_nous.html">Nous</a>
           </li>
         </ul>
 
@@ -71,9 +71,8 @@
           <button>Recherche</button>
         </form>
       </div>
-
     </nav>
-  </section>
+
 
   <script>
     function myFunction() {
@@ -98,8 +97,9 @@
               USB-C, Bluetooth 5.0, Gigabit Ethernet, et jusqu’à 8 Go de RAM.
             </p>
           </aside>
+          <p>Prix : 79,95 €</p>
         </div>
-        <span><em class="prix">Prix :</em> 79,95 €</span>
+
       </a>
     </div>
 
@@ -117,8 +117,8 @@
               n'occupe que 512 octets, nous aurons donc encore plus d'espace pour la programmation.
             </p>
           </aside>
+          <p>Prix : 13,50 €</p>
         </div>
-        <span><em class="prix">Prix :</em> 13,50 €</span>
       </a>
     </div>
 
@@ -127,7 +127,7 @@
         <div>
           <img src="img/clevo-pc70dn2_1_500px.png" alt="pc gamer haut de gamme">
           <aside>
-            <h2>ZOCKER LAPTOP BERSERK V8</h2>
+            <h2>Zocker Laptop Berserk V8</h2>
             <p>INTEL i7-10870H @ 5,0 GHz
               17,3" / 144 Hz / FHD
               SO-DIMM 32GB, DDR4-3200
@@ -136,10 +136,11 @@
               NVIDIA GeForce RTX 3080 Max-Q - 16 Go
               Windows 10 Pro inclus
               Garantie 24 mois
-              déballer - brancher - démarrer</p>
+              déballer - brancher - démarrer
+            </p>
           </aside>
+          <p>Prix : 3 062,82 €</p>
         </div>
-        <span><em class="prix">Prix :</em> 3 062,82 €</span>
       </a>
     </div>
   </main>
@@ -147,58 +148,57 @@
 
 
   <!-- ########################## FOOTER #############################  -->
-  <footer class=" flex container">
-    <section>
-
+  <footer class="container">
+    <section class="flex around">
       <div class="legacymention">
         <a href="mention_legal.html">
           <p>Mention Légal</p>
         </a>
       </div>
-
       <div class="paiement">
-        <div>
           <p>Paiements accepté :</p>
           <img src="img/paiement_1.png" alt="logo paiement paypal et CB">
-        </div>
       </div>
-
       <div class="reseauxSociaux">
         <ul>
           <li>
             <a href="https://fr-fr.facebook.com/">
               <i class="fab fa-facebook-square fa-2x"></i>
+              <p>Facebook</p>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/?hl=fr">
               <i class="fab fa-instagram-square fa-2x"></i>
+              <p>Instagram</p>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/home">
               <i class="fab fa-twitter-square fa-2x"></i>
+              <p>Twitter</p>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/">
               <i class="fab fa-linkedin fa-2x"></i>
+              <p>Linkedin</p>
             </a>
           </li>
         </ul>
       </div>
-
       <div class="carteNormandie">
+        <div>
         <a href="nos_societes.html">
           <img src="img/region-normandie.png" alt="carte des localisations de nos magasins">
         </a>
       </div>
+      </div>
     </section>
+    <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
+      la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray
+    </p>
   </footer>
-
-  <p class="copyright">Ce site est une réalisation de Romain Anger dans le cadre de
-    la formation DWWM de l'AFPA à Saint-Etienne-du-Rouveray</p>
-
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
